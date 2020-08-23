@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const paymentSchema = new Schema(
 	{
 		user_id: { type: String, required: true },
-		amount: { type: Decimal128, required: true },
+		amount: { type: mongoose.Decimal128, required: true },
 		status_id: { type: String, required: true },
 		payment_method_id: { type: String, required: true },
 	},
